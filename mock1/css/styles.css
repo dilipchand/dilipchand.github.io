@@ -262,8 +262,8 @@ p {
 /* Hero Section
 ------------------------------------------------------ */
 #hero {
-    height: 100vh;
-    min-height: 600px;
+    /* height: 100vh;
+    min-height: 600px; */
     background: linear-gradient(to right, rgba(11, 59, 91, 0.9), rgba(26, 106, 162, 0.8)), url('https://source.unsplash.com/random/1920x1080/?strategy') no-repeat center center/cover;
     display: flex;
     align-items: center;

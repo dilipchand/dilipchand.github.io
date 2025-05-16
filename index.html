@@ -1,2 +1,82 @@
-<a href="mock1/index.html">Mock 1</a>
-<a href="mock2/index.html">Mock 2</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mock Viewer</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="mock1/css/normalize.css">
+    <link rel="stylesheet" href="mock1/css/styles.css">
+    <link rel="stylesheet" href="mock1/css/customized.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            width: 100vw;
+            align-items: center;     /* vertical centering */
+            font-family: sans-serif;
+            flex-direction: column;
+        }
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            flex-grow: 1;
+            width: 100%;
+            justify-content: center;
+        }
+        .link-container a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 2em;
+            transition: color 0.3s;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px 170px;
+            border-radius: 10px;
+
+
+            background: linear-gradient(to right, rgba(11, 59, 91, 0.9), rgba(26, 106, 162, 0.8)), url(https://source.unsplash.com/random/1920x1080/?strategy) no-repeat center center / cover;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="logo" style="height: 80px;">
+    <a href="#home">
+        <img src="mock1/assets/images/logo-small.png" alt="Consilium Consulting Logo">
+        <div>
+            <div style="font-size: 1.6rem; line-height: 1.6rem;">
+                <span style="color: #177084; ">RAPP</span>
+                <span>Solutions</span>
+            </div>
+            <div class="caption">Discovering what's possible. Delivering what matters.</div>
+        </div>
+    </a>
+</div>
+<div class="link-container">
+    <a href="mock1/index.html" target="_blank">Mock 1</a>
+    <a href="mock2/index.html" target="_blank">Mock 2</a>
+</div>
+
+</body>
+</html>
