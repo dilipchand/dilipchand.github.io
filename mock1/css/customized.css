@@ -1,0 +1,36 @@
+.logo a {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.logo .caption {
+    font-size: .6rem; 
+    line-height: .6rem; 
+    font-style: italic; 
+    font-weight: normal;
+    padding-top: 2px;
+
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3498db;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: rotate(10deg);
+}
+
+.contact-info a {
+    color: white
+}
