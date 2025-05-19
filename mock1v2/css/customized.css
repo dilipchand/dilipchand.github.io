@@ -1,0 +1,87 @@
+.logo a {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.logo .caption {
+    font-size: .6rem; 
+    line-height: .6rem; 
+    font-style: italic; 
+    font-weight: normal;
+    padding-top: 2px;
+
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3498db;
+}
+
+.logo img {
+    height: 55px;
+    margin-right: 2px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: rotate(10deg);
+}
+
+.contact-info a {
+    color: white
+}
+
+header {
+    border-bottom: 3px solid #00A9b7;
+}
+
+header .company-name {
+    font-size: 1.9rem; 
+    line-height: 1.9rem;
+}
+
+.lead strong {
+    font-style: italic;
+}
+
+.text-imp {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.process-steps {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, calc(25% - 15px));
+}
+
+.process-steps > .step {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 25px;
+    background-color: var(--white);
+    margin-bottom: 0px;
+}
+
+.process-steps h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .process-steps {
+        grid-template-columns: 1fr
+    }
+    .process-steps .step-icon {
+        font-size: 1.5rem;
+    }
+}
