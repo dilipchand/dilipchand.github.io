@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rapp Solutions - Discovering what's possible. Delivering what matters.</title>
+    <title>RAPP SOLUTIONS - Discovering what's possible. Delivering what matters.</title>
     <meta name="description" content="Rapp Solutions helps organizations transform operations, eliminate inefficiencies, and build powerful software solutions that matter.">
     
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.jpg" type="image/jpeg">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -23,14 +26,14 @@
     <!-- Header -->
     <header id="header">
         <div class="container">
-            <div class="logo">
+           <div class="logo">
                 <a href="#home">
-                    <img src="assets/images/logo-small.png" alt="Consilium Consulting Logo">
+                    <img src="assets/images/logo-small.png" alt="RAPP SOLUTIONS Logo" class="logo-small">
                     <div>
-                        <div class="company-name">
-                            <span style="color: #177084; ">RAPP</span>
-                            <span>SOLUTIONS</span>
-                        </div>
+                        <span class="brand-name">
+                            <span class="company-name rapp"></span>
+                            <span class="company-name solutions"></span>
+                        </span>
                         <!--<div class="caption">Discovering what's possible. Delivering what matters.</div>-->
                     </div>
                 </a>
@@ -40,7 +43,18 @@
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#success-stories">Success Stories</a></li>
                     <li><a href="#partnership">Process</a></li>
-                    <li><a href="#services">Our Services</a></li>                    
+                    <li><a href="#services">Our Services</a></li>
+                    <li class="dropdown">
+                        <a href="#downloads" class="dropdown-toggle">Downloads <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="downloads/rapp-solutions-services.pdf" download="RappSoultionServices.pdf">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="downloads/about-rapp-solutions.pdf" download>About Rapp Solutions</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#contact" class="btn-primary">Contact Us</a></li>
                 </ul>
                 <div class="mobile-nav-toggle">
@@ -56,12 +70,7 @@
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>
-                    <span>Discovering</span>
-                    <span class="text-imp">what's possible.</span>
-                    <span>Delivering</span>
-                    <span class="text-imp">what matters.</span>
-                </h1>
+                <h1>Discovering what's possible.<br>Delivering what matters.</h1>
                 <p class="lead">
                     <span class="text-imp">We free you</span> from tedious processes, clunky systems, and frustrating workarounds—bringing
 your vision of a better way to life, <span class="text-imp">so your team can focus on what matters most.</span></p>
@@ -216,7 +225,7 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
                             <i class="fa-solid fa-people-group"></i>
                         </div>
                         <div class="step-content">
-                            <p>We lead state of theart visual concept sessions to keep everyone aligned and facilitate decisions.</p>
+                            <p>We lead state-of-the-art visual concept sessions to keep everyone aligned and facilitate decisions.</p>
                         </div>
                     </div>
                     
@@ -281,9 +290,13 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
     <section id="about" class="section-padding  bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Why We Started
-                            <span style="color: #177084; ">RAPP</span>
-                            <span>SOLUTIONS</span></h2>
+                <h2>
+                    Why We Started
+                    <span class="brand-name">
+                        <span class="company-name rapp"></span>
+                        <span class="company-name solutions"></span>
+                    </span>
+                </h2>
                 <div class="underline"></div>
             </div>
             <div class="about-grid">
@@ -294,7 +307,8 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
                 </div>
                 <div class="about-image">
                     <div class="image-box">
-                        <i class="fa-solid fa-lightbulb fa-8x"></i>
+                        <!--<i class="fa-solid fa-lightbulb fa-8x"></i>-->
+                        <img src="assets/images/logo.png" alt="RAPP SOLUTIONS Logo">
                     </div>
                 </div>
             </div>
@@ -329,7 +343,7 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
             </div>
              <div class="services-all">        
                 <!-- Operational Strategy -->
-                <div class="service-category">
+                <div id="services-operational-strategy" class="service-category">
                     <h3 class="service-category-title accent-border">Operational Strategy</h3>
                     <div class="service-grid">                        
                         <div class="service-item">
@@ -387,7 +401,7 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
                     </div>
                 </div>
                 <!-- Solution Design, Delivery And Integration -->
-                <div class="service-category">
+                <div id="services-solution-design" class="service-category">
                     <h3 class="service-category-title accent-border">Solution Design, Delivery And Integration</h3>
                     <div class="service-grid">                        
                         <div class="service-item">
@@ -403,7 +417,7 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
                                 </p>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div id="services-software-dev" class="service-item">
                             <div class="service-header">
                                 <div class="service-icon">
                                     <i class="fa-solid fa-code"></i>
@@ -443,7 +457,7 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
                             </div>
                         </div>
 
-                        <div class="service-item">
+                        <div id="services-data-visualization" class="service-item">
                             <div class="service-header">
                                 <div class="service-icon">
                                     <i class="fa-solid fa-chart-pie"></i>
@@ -485,7 +499,7 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
                     </div>
                 </div>
                 <!-- Rollout & Support -->
-                <div class="service-category">
+                <div id="services-rollout-support" class="service-category">
                     <h3 class="service-category-title accent-border">Rollout & Support</h3>
                     <div class="service-grid">                        
                         <div class="service-item">
@@ -678,6 +692,53 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
         </div>
     </section>
 
+    <!-- Downloads Section -->
+    <section id="downloads" class="section-padding bg-primary text-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Downloads</h2>
+                <div class="underline"></div>
+                <p class="lead">Access our handouts to help you get started.</p>
+            </div>
+            
+            <div class="downloads-grid">
+                <div id="handout1" class="download-item">
+                    <div class="download-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="download-content">
+                        <h3>Our Services</h3>
+                        <p>Essential information about our services and approach.</p>
+                        <a href="downloads/rapp-solutions-services.pdf" download="RappSolutionsServices.pdf" class="download-link" target="_blank">Download PDF <i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+                
+                <div id="handout2" class="download-item">
+                    <div class="download-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="download-content">
+                        <h3>About Rapp Solutions</h3>
+                        <p>Detailed explanation of our success and process  methodology.</p>
+                        <a href="downloads/about-rapp-solutions.pdf" 
+                        download="RappSolutions.pdf" class="download-link" target="_blank">Download PDF <i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+                
+                <!--<div id="doctemplate1" class="download-item">
+                    <div class="download-icon">
+                        <i class="fa-solid fa-file-word"></i>
+                    </div>
+                    <div class="download-content">
+                        <h3>DocTemplate1</h3>
+                        <p>A template document to help you get started with our services.</p>
+                        <a href="./attached_assets/Rapp Solutions Handounts FOR AI.key" class="download-link" target="_blank">Download Template <i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="section-padding">
         <div class="container">
@@ -697,7 +758,8 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
                     </div>
                     <div class="info-item">
                         <i class="fa-solid fa-envelope"></i>
-                        <div click="copyToClipboard('vince@rappsolutions.com')" title="Click to copy the email">vince@rappsolutions.com</div>
+                        <a href="mailto:'vince@rappsolutions.com'">vince@rappsolutions.com</a>
+                        <!--<div click="copyToClipboard('vince@rappsolutions.com')" title="Click to copy the email">vince@rappsolutions.com</div>-->
                     </div>
                     <div class="info-item">
                         <i class="fa-solid fa-phone"></i>
@@ -783,15 +845,27 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
             <div class="footer-content">
 
                 <div class="footer-logo">
-                    <a>
-                        <div>
-                            <div style="font-size: 1.5rem; line-height: 1.6rem;">
-                                RAPP Solutions
-                            </div>
-                            <div style="font-size: 0.8rem; font-style: italic; padding-top: 5px; color: #f58025;" class="caption">Discovering what's possible. Delivering what matters.</div>
-                            <div style="font-size: .9rem;">Based in Columbus, OHIO</div>
+                    <div>
+                        <div class="brand-name">
+                            <span class="rapp"></span>
+                            <span class="solutions"></span>
                         </div>
-                    </a>
+                        <div class="brand-tagline">Discovering what's possible. Delivering what matters.</div>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Based in Columbus, Ohio</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:'vince@rappsolutions.com'">vince@rappsolutions.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+1-614-816-9627</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="footer-links">
@@ -801,28 +875,27 @@ and <span class="text-imp">productively delivering solutions with purpose.</span
                             <li><a href="#hero">Home</a></li>
                             <li><a href="#success-stories">Success Stories</a></li>
                             <li><a href="#partnership">Process</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>                    
+                            <li><a href="#services">Our Services</a></li>
+                            <li><a href="#downloads">Downloads</a></li>
                             <li><a href="#contact">Contact Us</a></li>
-
                         </ul>
                     </div>
                     
                     <div class="footer-services">
-                        <h4>Services</h4>
+                        <a href="#services"><h4>Our Services</h4></a>
                         <ul>
-                            <li><a href="#services">Operational Strategy</a></li>
-                            <li><a href="#services">Solution Design</a></li>
-                            <li><a href="#services">Software Development</a></li>
-                            <li><a href="#services">Data Visualization</a></li>
-                            <li><a href="#services">Rollout & Support</a></li>
+                            <li><a href="#services-operational-strategy">Operational Strategy</a></li>
+                            <li><a href="#services-solution-design">Solution Design</a></li>
+                            <li><a href="#services-software-dev">Software Development</a></li>
+                            <li><a href="#services-data-visualization">Data Visualization</a></li>
+                            <li><a href="#services-rollout-support">Rollout & Support</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Rapp Solutions. All rights reserved.</p>
+                <p>&copy; 2025 RAPP SOLUTIONS. All rights reserved.</p>
             </div>
         </div>
     </footer>

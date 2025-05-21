@@ -13,7 +13,7 @@
     --black: #000000;
 
     --teal-color: #00A9b7; /*0, 169, 183*/
-    --dark-teal-color: #007C91; /* 0, 124, 145*/
+    --dark-teal-color: #007C91; /* 0, 124, 145*/ /*177084*/
     --light-teal-color: #E2EBF0;
     --icon-color: var(--dark-teal-color);
     --icon-light-color: var(--light-teal-color);
@@ -124,6 +124,71 @@ p {
     margin-bottom: 4rem;
 }
 
+/* Brand Name
+------------------------------------------------------ */
+
+.brand-name {
+    text-transform: uppercase;
+}
+
+.brand-name .rapp {
+    color: var(--dark-teal-color)
+}
+
+.brand-name .rapp:before {
+    content: "Rapp";
+}
+
+.brand-name .solutions {
+    color: var(--primary-color)
+}
+
+.brand-name .solutions:before {
+    content: "Solutions";
+}
+
+.footer-content .brand-name .rapp, .footer-content .brand-name .solutions {
+    color: var(--white) !important;
+}
+
+#header .brand-name {
+    font-size: 1.9rem; 
+    line-height: 1.9rem;
+    font-weight: bolder;
+}
+
+.footer-content .brand-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.footer-content .brand-tagline {
+    font-size: .8rem; 
+    line-height: 1.3rem;
+    font-style: italic;
+    letter-spacing: .5px;
+}
+
+.footer-content .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    margin-top: .5rem
+}
+
+.contact-details .contact-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .9rem;
+}
+
+.contact-details .contact-item a {
+    color: rgba(255, 255, 255, .7) !important;
+}
+
 /* Button Styles
 ------------------------------------------------------ */
 .btn-primary, .btn-secondary, .btn-light {
@@ -203,7 +268,7 @@ p {
 .main-nav {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .main-nav a {
@@ -348,10 +413,14 @@ p {
     border-radius: var(--border-radius-lg);
 }
 
+.image-box img {
+    width: 70%;
+}
+
 /* Partnership Section
 ------------------------------------------------------ */
 .partnership-content {
-    max-width: 900px;
+    /*max-width: 900px;*/
     margin: 0 auto;
 }
 
@@ -359,12 +428,24 @@ p {
     margin: 3rem 0;
 }
 
-.step {
+
+.process-steps {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 2rem;
     align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--white);
+    margin-bottom: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
 
 .step-icon {
@@ -486,7 +567,7 @@ p {
 
 .service-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
 
@@ -661,6 +742,64 @@ p {
     margin: 0 auto;
 }
 
+/* Downloads Section
+------------------------------------------------------ */
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.download-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.download-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+}
+
+.download-content h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.download-content p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: var(--black)
+}
+
+.download-link {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.download-link:hover {
+    color: var(--accent-color);
+}
+
+.download-link i {
+    margin-left: 0.5rem;
+}
+
 /* Contact Section
 ------------------------------------------------------ */
 /* Contact Section
@@ -689,6 +828,11 @@ p {
 .info-item i {
     font-size: 1.5rem;
     color: var(--icon-color);
+}
+
+.info-item a {
+    color: inherit !important;
+    text-decoration: underline;
 }
 
 .contact-form {
@@ -735,11 +879,16 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .footer-logo p {
     margin-top: 1rem;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-logo .info-item, .footer-logo i {
+    font-size: 1rem;
 }
 
 .footer-links {
@@ -752,6 +901,7 @@ p {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
     position: relative;
+    color: var(--white);
 }
 
 .footer-nav h4:after, .footer-services h4:after {
@@ -815,6 +965,113 @@ p {
 
 #back-to-top:hover {
     background-color: var(--secondary-color);
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle i {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--white);
+    min-width: 180px;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    /*border-radius: var(--border-radius-md);*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    display: none;
+    border-top: 2px solid var(--teal-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0 !important;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+}
+
+.mobile-nav-toggle {
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    width: 30px;
+    height: 22px;
+}
+
+.mobile-nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--primary-color);
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: var(--transition);
+}
+
+.mobile-nav-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.mobile-nav-toggle span:nth-child(2) {
+    top: 9px;
+}
+
+.mobile-nav-toggle span:nth-child(3) {
+    top: 18px;
+}
+
+.mobile-nav-toggle.open span:nth-child(1) {
+    top: 9px;
+    transform: rotate(135deg);
+}
+
+.mobile-nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.mobile-nav-toggle.open span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-135deg);
 }
 
 /* Animations
@@ -904,7 +1161,7 @@ p {
         background-color: var(--white);
         flex-direction: column;
         justify-content: flex-start;
-        padding: 2rem;
+        padding: 1.5rem;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         transition: right 0.3s ease;
         z-index: 999;
@@ -973,5 +1230,13 @@ p {
     .tab-btn {
         width: 100%;
         border-bottom: 1px solid var(--light-grey);
+    }
+
+    .image-box {
+        min-height: 200px;
+    }
+
+    .image-box img {
+        width: 50%;
     }
 }

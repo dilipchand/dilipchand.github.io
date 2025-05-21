@@ -113,7 +113,7 @@ $(document).ready(function() {
     setInterval(function() {
         currentStory = (currentStory + 1) % totalStories;
         showStory(currentStory);
-    }, 5000);
+    }, 15000);
     
     // Contact form submission (for demonstration)
     $('#contactForm').submit(function(e) {
@@ -145,7 +145,7 @@ $(document).ready(function() {
             
             if (elementPosition < scrollY + viewportHeight - 100) {
                 $(this).css('opacity', '1');
-                $(this).css('transform', 'translateY(0)');
+                //$(this).css('transform', 'translateY(0)');
             }
         });
     }
@@ -153,7 +153,7 @@ $(document).ready(function() {
     // Set initial state for animated elements
     $('.service-item, .step, .story-slide, .about-image').css({
         'opacity': '0',
-        'transform': 'translateY(20px)',
+        //'transform': 'translateY(20px)',
         'transition': 'opacity 0.5s ease, transform 0.5s ease'
     });
     
