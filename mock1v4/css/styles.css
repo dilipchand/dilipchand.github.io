@@ -562,6 +562,7 @@ p {
 
 .industry span {
     font-weight: 600;
+    color: var(--primary-color);
 }
 
 /* Services Section
