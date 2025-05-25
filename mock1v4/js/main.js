@@ -11,6 +11,13 @@ $(document).ready(function() {
         $('.main-nav').removeClass('open');
     });
 
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('header').length) {
+            $('.mobile-nav-toggle').removeClass('open');
+            $('.main-nav').removeClass('open');
+        }
+    });
+
     // Smooth scrolling for navigation links
     $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
         if (
