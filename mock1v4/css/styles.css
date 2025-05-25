@@ -35,6 +35,9 @@
     
     /* Transition */
     --transition: all 0.3s ease;
+
+    /* Header height */
+    --header-height-sm: 75px;  
 }
 
 * {
@@ -1197,7 +1200,7 @@ p {
 @media screen and (max-width: 1023.98px) {
     .main-nav {
         position: fixed;
-        top: 80px;
+        top: var(--header-height-sm);
         right: -100%;
         width: 80%;
         max-width: 300px;
@@ -1218,6 +1221,10 @@ p {
     .mobile-nav-toggle {
         display: block;
     }
+
+    #header .btn-primary {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1226,7 +1233,7 @@ p {
     }
 
     #header {
-        height: 75px;
+        height: var(--header-height-sm);
     }
 
     .hero-content h1 {
